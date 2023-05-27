@@ -1,0 +1,201 @@
+/* Work Sans Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.container {
+  padding: 20px 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logo img{
+  width: 80%;
+}
+
+.mobile_logo{
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+nav a {
+  margin: 0 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #888888;
+}
+
+nav a:hover {
+  // font-weight: 600;
+  color: #ff5c00;
+}
+
+nav a:focus {
+  font-weight: 600;
+  color: #000000;
+}
+
+.join_now button {
+  outline: none;
+  background-color: #181818;
+  border-radius: 35px;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.join_now button:hover{
+  background-color: #ff5c00;
+}
+
+.mobile_join_us,.last_point{
+  display: none;
+}
+
+.reg-incase {
+  margin-left: 100px;
+}
+
+.reg-incase button {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  line-height: 26px;
+  color: #ffffff;
+  outline: none;
+  padding: 5px 20px 5px 20px;
+  border-radius: 4px;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+  font-size: 1.5rem;
+  color: #c0c0c0;
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  header {
+    height: 5vh;
+  }
+  .logo{
+    display: none;
+  }
+  .mobile_logo{
+    display: block;
+  }
+  header .nav-btn,
+  .reg-incase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 20px;
+  }
+  .reg-incase button {
+    padding: 5px 50px 5px 50px;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #181818;
+    color: #ffffff;
+    transition: 1s;
+    transform: translateX(-100vh);
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  header .responsive_nav {
+    transform: none;
+  }
+  .reg {
+    display: none;
+  }
+  .join_now button{
+    display: none;
+  }
+  .last_point{
+    display: block;
+  }
+  .mobile_join_us{
+    display: block;
+    background-color: #ff5c00;
+    border-radius: 35px;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .logo{
+    display: none;
+  }
+  header nav{
+    height: 85%;
+  }
+  .mobile_logo{
+    display: block;
+  }
+  .mobile_logo img{
+    width: 100%;
+  }
+}
