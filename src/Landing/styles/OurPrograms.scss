@@ -1,0 +1,28 @@
+.programs {
+  margin: 50px auto;
+  width: 90%;
+
+  .program_header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    h3 {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 63px;
+      color: #000000;
+    }
+
+    p {
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000000;
+    }
+  }
+}

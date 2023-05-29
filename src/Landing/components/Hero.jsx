@@ -42,12 +42,12 @@ const Hero = () => {
                 potential, push your limits, and ascend to greatness.
               </p>
             </div>
-            <NavLink to="" style={{textDecoration: "none"}}>
-              <div className="join_us">
+            <div className="join_us">
+              <NavLink to="" style={{ textDecoration: "none" }}>
                 <img src={join} alt="join_icon" />
-                <p>Join Now</p>
-              </div>
-            </NavLink>
+              </NavLink>
+              <p>Join Now</p>
+            </div>
           </div>
         </div>
         <div className="elevate_right"></div>
