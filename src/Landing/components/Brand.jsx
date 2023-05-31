@@ -9,9 +9,9 @@ import BrandImages from "../images/brands.svg";
 const Brand = () => {
   return (
     <main className="brands">
-        <marquee>
+        <div>
             <img src={BrandImages} alt="BrandImages" />
-        </marquee>
+        </div>
     </main>
   )
 }

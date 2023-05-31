@@ -86,12 +86,20 @@
 
     .marquee_text {
       margin-top: -50px;
-      marquee {
+      p {
         color: #b2b2b20d;
         font-family: "Sora";
         font-style: normal;
         font-weight: 800;
         font-size: 200px;
+        display: inline-block; /* Display content in a single line */
+        white-space: nowrap; /* Prevent content from wrapping */
+        animation: marquee 15s linear infinite;
+
+        @keyframes marquee {
+          0% { transform: translateX(0); } /* Starting position */
+          100% { transform: translateX(-100%); } /* Ending position */
+        }
       }
     }
 

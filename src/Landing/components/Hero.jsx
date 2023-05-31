@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="hero_elevate">
         <div className="elevate_left">
           <div className="marquee_text">
-            <marquee>EXERCISE</marquee>
+            <p>EXERCISE</p>
           </div>
           <div className="inner_elevate">
             <div className="inner_elevate_header">
