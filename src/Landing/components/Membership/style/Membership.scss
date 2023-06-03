@@ -14,7 +14,7 @@
 
       .membership_marquee_slide {
         display: inline-block;
-        animation: marquee 35s infinite linear;
+        animation: marquee 100s infinite linear;
         position: relative;
         margin-top: -70px;
 
@@ -30,6 +30,15 @@
             // line-height: 290px;
             letter-spacing: 1px;
             color: #b2b2b20d;
+          }
+        }
+
+        @keyframes marquee {
+          from{
+            transform: translateX(0);
+          }
+          to{
+            transform: translateX(-100%);
           }
         }
       }

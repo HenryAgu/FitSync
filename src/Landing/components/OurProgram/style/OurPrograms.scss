@@ -124,6 +124,11 @@
           background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;
+          transition: all 0.2s ease;
+
+          &:hover{
+            filter: grayscale(100%);
+          }
         }
 
         .challenge_right {
