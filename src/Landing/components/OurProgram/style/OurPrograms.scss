@@ -1,0 +1,255 @@
+.programs {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 90%;
+
+  .program_header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    h3 {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 63px;
+      color: #000000;
+    }
+
+    p {
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+    }
+  }
+
+  .program_content {
+    margin: 50px auto;
+    display: flex;
+    overflow: hidden;
+    column-gap: 10px;
+    width: 100%;
+    height: 750px;
+
+    .program_content_left {
+      width: 45%;
+      border-radius: 30px;
+      height: fit-content;
+      overflow: hidden;
+
+      .energize_section {
+        height: 60%;
+        padding: 30px;
+        border-radius: 30px;
+        background-image: url(../images/leftProgram.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-y: hidden;
+
+        h1 {
+          font-family: "Sora";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 45px;
+          line-height: 70px;
+          color: #ffffff;
+        }
+
+        .energize_img {
+          position: relative;
+          left: 200px;
+          bottom: 80px;
+
+          img {
+            width: 150px;
+            animation-direction: alternate;
+            animation: spin 5s linear infinite;
+
+            @keyframes spin {
+              from {
+                transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(360deg);
+              }
+            }
+          }
+        }
+
+        .energize_button {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 48px;
+          cursor: pointer;
+          width: 45%;
+          transition: all 0.3s ease-in;
+          padding: 15px;
+          background-color: #ff5c00;
+          color: #ffffff;
+          margin-top: -80px;
+
+          p,
+          .button_arrow {
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+          }
+
+          &:hover {
+            background-color: #ffffff;
+            color: #000000;
+          }
+        }
+      }
+
+      .challenge_program {
+        display: flex;
+        // align-items: center;
+        margin-top: 10px;
+        column-gap: 10px;
+
+        .challenge_left {
+          height: 52vh;
+          width: 50vw;
+          border-radius: 30px;
+          background-image: url(../images/challenge.svg);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .challenge_right {
+          height: 52vh;
+          width: 50vw;
+          padding: 0 15px;
+          border-radius: 30px;
+          background-color: #ffffff;
+          border: 1px solid #000000;
+
+          h1 {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 90px;
+            color: #000000;
+          }
+
+          h3 {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 132.8%;
+            color: #000000;
+          }
+
+          .challenge_button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            border-radius: 48px;
+            cursor: pointer;
+            width: 85%;
+            transition: all 0.3s ease-in;
+            padding: 12px 18px;
+            border: 1px solid #000000;
+
+            p,
+            .button_arrow {
+              font-family: "Work Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 23px;
+              color: #000000;
+            }
+
+            &:hover {
+              background-color: #ff5c00;
+            }
+
+            &:hover p,
+            &:hover .button_arrow {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    .program_content_right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+      width: 55%;
+      border-radius: 30px;
+      height: 90%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .content_right_top {
+        display: flex;
+        margin-top: 10px;
+        margin-right: -20px;
+        justify-content: end;
+
+        img{
+          width: 70%;
+        }
+      }
+
+      .content-right_bottom {
+        h1 {
+          font-family: "Sora";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 60px;
+          line-height: 101px;
+          color: #ffffff;
+        }
+
+        p {
+          font-family: "Work Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 27px;
+          margin-bottom: 50px;
+          color: #ffffff;
+        }
+
+        .right_navigator {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+
+          button {
+            width: 100%;
+            height: 8px;
+            background: #989898;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            outline: none;
+            border: none;
+
+            &:focus{
+              background: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

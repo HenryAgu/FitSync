@@ -1,0 +1,33 @@
+.brands {
+  margin: 0 auto;
+  width: 90%;
+
+  .logos{
+    padding: 50px 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    .logos_slide{
+      display: inline-block;
+      // width: 130%;
+      margin-left: 50px;
+      animation: slide 15s infinite linear;
+
+      img{
+        height: 100px;
+        margin: 0 50px;
+      }
+
+      
+    }
+  }
+
+  @keyframes slide {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+}

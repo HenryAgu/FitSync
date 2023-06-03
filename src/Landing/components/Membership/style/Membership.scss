@@ -1,0 +1,60 @@
+.membership {
+  margin-top: 100px;
+  padding: 50px 0;
+  padding-bottom: 100px;
+  background: #040404;
+
+  .membership_content {
+    margin: 0 auto;
+    width: 90%;
+
+    .membership_slide {
+      overflow: hidden;
+      white-space: nowrap;
+
+      .membership_marquee_slide {
+        display: inline-block;
+        animation: marquee 35s infinite linear;
+        position: relative;
+        margin-top: -70px;
+
+        .slide_content{
+          display: flex;
+          align-items: center;
+          h1 {
+            margin-left: 40px;
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 230px;
+            // line-height: 290px;
+            letter-spacing: 1px;
+            color: #b2b2b20d;
+          }
+        }
+      }
+    }
+
+    .membership_header {
+      position: relative;
+      bottom: 230px;
+      h3 {
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 63px;
+        color: #ffffff;
+      }
+
+      h4 {
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #ffffff;
+      }
+    }
+  }
+}
