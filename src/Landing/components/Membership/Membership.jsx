@@ -3,6 +3,9 @@
 // stylsheet
 import "../Membership/style/Membership.scss";
 
+// components
+import Plans from "./components/Plans";
+
 const Membership = () => {
   return (
     <main className="membership">
@@ -24,6 +27,7 @@ const Membership = () => {
             fitness opportunities
           </h4>
         </div>
+        <Plans/>
       </div>
     </main>
   );

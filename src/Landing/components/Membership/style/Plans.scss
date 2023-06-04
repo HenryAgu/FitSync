@@ -1,0 +1,131 @@
+.plan {
+  width: 100%;
+  margin-top: -100px;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+
+  .plan_card {
+    padding: 30px;
+    border-radius: 40px;
+    background-color: #ffffff;
+
+    .plan_header {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 76px;
+        color: #000000;
+
+        span {
+          color: #989898;
+          font-size: 24px;
+        }
+      }
+
+      h4 {
+        margin-bottom: 15px;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+      }
+    }
+
+    .content {
+      .plan_content {
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+        .plan_content_point {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+
+          p {
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .plan_button {
+      margin-top: 20px;
+
+      button {
+        width: 100%;
+        background: #ff5c00;
+        padding: 15px 0;
+        border-radius: 48px;
+        cursor: pointer;
+        border: 2.5px solid #ff5c00;
+        outline: none;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        color: #ffffff;
+        transition: all 0.2s ease;
+
+        &:hover{
+          border: 2.5px solid #000000;
+        }
+      }
+    }
+  }
+
+  .standard_card {
+    background-color: #ff5c00;
+
+    .standard_header {
+      h1 {
+        color: #ffffff;
+
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .standard_content {
+      .plan_content {
+        .plan_content_point {
+          p {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .standard_button{
+
+        button{
+            background-color: #ffffff;
+            border: 2.5px solid #ffffff;
+            color: #ff5c00;
+
+            &:hover{
+              border: 2.5px solid #000000;
+            }
+        }
+    }
+  }
+}

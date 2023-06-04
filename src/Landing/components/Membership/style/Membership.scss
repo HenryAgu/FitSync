@@ -7,6 +7,7 @@
   .membership_content {
     margin: 0 auto;
     width: 90%;
+    overflow: hidden;
 
     .membership_slide {
       overflow: hidden;
@@ -46,7 +47,7 @@
 
     .membership_header {
       position: relative;
-      bottom: 230px;
+      bottom: 240px;
       h3 {
         font-family: "Sora";
         font-style: normal;
