@@ -6,6 +6,7 @@ import "../style/Plans.scss";
 // images
 import bullet from "../images/Bullets.svg";
 import bullet2 from "../images/Bullet2.svg";
+import star from "../images/star.svg";
 
 // Nav link
 import { NavLink } from "react-router-dom";
@@ -47,13 +48,17 @@ const Plans = () => {
           </div>
         </div>
         <div className="plan_button">
-            <NavLink to="">
-                <button>Choose Basic Plan</button>
-            </NavLink>
+          <NavLink to="">
+            <button>Choose Basic Plan</button>
+          </NavLink>
         </div>
       </div>
       <div className="plan_card standard_card">
         <div className="plan_header standard_header">
+          <div className="recommended">
+            <img src={star} alt="star" />
+            <p>Recommended</p>
+          </div>
           <h1>
             $50<span>/Month</span>
           </h1>
@@ -86,9 +91,9 @@ const Plans = () => {
           </div>
         </div>
         <div className="plan_button standard_button">
-            <NavLink to="">
-                <button>Choose Standard Plan</button>
-            </NavLink>
+          <NavLink to="">
+            <button>Choose Standard Plan</button>
+          </NavLink>
         </div>
       </div>
       <div className="plan_card">
@@ -125,9 +130,9 @@ const Plans = () => {
           </div>
         </div>
         <div className="plan_button">
-            <NavLink to="">
-                <button>Choose Premium Plan</button>
-            </NavLink>
+          <NavLink to="">
+            <button>Choose Premium Plan</button>
+          </NavLink>
         </div>
       </div>
     </main>
