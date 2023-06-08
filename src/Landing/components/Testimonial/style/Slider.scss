@@ -1,0 +1,180 @@
+.quotes {
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 80px;
+  padding-left: 70px;
+
+  .quote_card {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+    margin-top: 30px;
+    width: 550%;
+
+    .inner_quotes {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      width: 100%;
+
+      .left_quote {
+        background-color: #ff5c00;
+        padding: 50px;
+
+        .head_quote {
+          p {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 155%;
+            color: #ffffff;
+          }
+        }
+
+        .quote_writer {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          margin-top: 50px;
+
+          .left_quote_writer {
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+
+          .right_quote_writer {
+            h4 {
+              font-family: "Work Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 25px;
+              line-height: 155%;
+              color: #ffffff;
+            }
+
+            p {
+              font-family: "Work Sans";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 155%;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      .right_quote {
+        padding: 50px;
+
+        .head_quote {
+          p {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 700;
+            // text-align: justify;
+            font-size: 22px;
+            line-height: 155%;
+            color: #000000;
+          }
+        }
+
+        .quote_writer {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          margin-top: 50px;
+
+          .left_quote_writer {
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+
+          .right_quote_writer {
+            h4 {
+              font-family: "Work Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 25px;
+              line-height: 155%;
+              color: #000000;
+            }
+
+            p {
+              font-family: "Work Sans";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 155%;
+              color: #888888;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slide_nav {
+    display: flex;
+    width: 91%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .left_nav {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 155%;
+        color: #000000;
+      }
+
+      h4{
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 155%;
+        color: #888888;
+      }
+    }
+
+    .right_nav{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        .left_arrow{
+            font-size: 25px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover{
+                color: #888888;
+            }
+        }
+
+        .right_arrow{
+            font-size: 25px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover{
+                color: #888888;
+            }
+        }
+    }
+  }
+}
