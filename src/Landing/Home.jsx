@@ -6,6 +6,7 @@ import Community from "./components/Community/Community";
 import Hero from "./components/Hero/Hero";
 import Membership from "./components/Membership/Membership";
 import OurPrograms from "./components/OurProgram/OurPrograms";
+import Team from "./components/Team/Team";
 import Testimonial from "./components/Testimonial/Testimonial";
 
 
@@ -19,6 +20,7 @@ const index = () => {
         <Membership/>
         <Testimonial/>
         <Community/>
+        <Team/>
       </main>
     </>
   );
