@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from "react";
 
 // stylesheet
 import "../style/Slider.scss";
@@ -16,8 +16,8 @@ import Image4 from "../images/image4.svg";
 import Image5 from "../images/image5.svg";
 
 const Slider = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [counter, setCounter] = useState(1)
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [counter, setCounter] = useState(1);
 
   const testimonials = [
     {
@@ -30,15 +30,15 @@ const Slider = () => {
 
       // Right Side
       SecondQuote:
-        "I LOVE THIS FITNESS PLATFORM! THE CONVENIENCE OF ACCESSING WORKOUTS FROM ANWHEREIS UNBEATABLE. THE TRAINERS ARE MOTIVATING, AND THE COMMUNITY SUPPORT IS INCREDIBLE. IT’S LIKE HAVING A PERSONAL TRAINER.",
+        "THE FITNESS PLATFORM HAS BEEN A GAME-CHANGER  FOR ME!. THE VARIETY OF WORKOUTS KEEPS ME ENGAGED, AND THE TRAINERS PROVIDE EXCELLENT GUIDANCE. I’VE LOST WEIGHT, GAINED STRENGTH, AND FEEL MORE CONFIDENT THAN EVER.",
       SecondImage: Image2,
-      SecondName: "Frank Nicholas",
-      SecondOccupation: "Software Programmer",
+      SecondName: "Deborah Susan",
+      SecondOccupation: "Gym Instructor",
     },
     {
       id: 2,
       FirstQuote:
-        "JOINING THIS FITNESS PLATFORM WAS THE BEST DECISION I MADE FOR MY HEALTH. THE WORKOUT PROGRAMS ARE WELL-STRUCTURED, CHALLENGING YET ADAPTABLE TO MY FITNESS LEVEL. THE RERSULTS HAVE BEEN AMAZING.",
+        "THE FITNESS PLATFORM HAS BEEN A GAME-CHANGER  FOR ME!. THE VARIETY OF WORKOUTS KEEPS ME ENGAGED, AND THE TRAINERS PROVIDE EXCELLENT GUIDANCE. I’VE LOST WEIGHT, GAINED STRENGTH, AND FEEL MORE CONFIDENT THAN EVER.",
       FirstImage: Image2,
       FirstName: "Deborah Susan",
       FirstOccupation: "Gym Instructor",
@@ -97,21 +97,24 @@ const Slider = () => {
     },
   ];
 
-  const updateIndex = (newIndex) =>{
-    if(newIndex < 0){
+  const updateIndex = (newIndex) => {
+    if (newIndex < 0) {
       newIndex = 0;
-    }else if(newIndex >= testimonials.length){
+    } else if (newIndex >= testimonials.length) {
       newIndex = testimonials.length - 1;
     }
 
     setActiveIndex(newIndex);
-  }
+  };
   return (
     <main className="quotes">
       <div className="quote_icon">
         <img src={Quote} alt="Quote" />
       </div>
-      <section className="quote_card" style={{transform: `translate(-${activeIndex * 20}%)`}}>
+      <section
+        className="quote_card"
+        style={{ transform: `translate(-${activeIndex * 20}%)` }}
+      >
         {testimonials.map((test) => {
           return (
             <>
@@ -157,18 +160,24 @@ const Slider = () => {
           <h4>5</h4>
         </div>
         <div className="right_nav">
-          <TfiAngleLeft className="left_arrow" onClick={()=> {
-            updateIndex(activeIndex - 1);
-            if(counter > 1){
-              setCounter(counter - 1);
-            }
-          }}/>
-          <TfiAngleRight className="right_arrow" onClick={()=>{
-            updateIndex(activeIndex + 1);
-            if(counter < 5){
-              setCounter(counter + 1);
-            }
-          }}/>
+          <TfiAngleLeft
+            className="left_arrow"
+            onClick={() => {
+              updateIndex(activeIndex - 1);
+              if (counter > 1) {
+                setCounter(counter - 1);
+              }
+            }}
+          />
+          <TfiAngleRight
+            className="right_arrow"
+            onClick={() => {
+              updateIndex(activeIndex + 1);
+              if (counter < 5) {
+                setCounter(counter + 1);
+              }
+            }}
+          />
         </div>
       </div>
     </main>

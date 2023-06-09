@@ -2,6 +2,7 @@
 
 // components
 import Brand from "./components/Brand/Brand";
+import Community from "./components/Community/Community";
 import Hero from "./components/Hero/Hero";
 import Membership from "./components/Membership/Membership";
 import OurPrograms from "./components/OurProgram/OurPrograms";
@@ -17,6 +18,7 @@ const index = () => {
         <OurPrograms/>
         <Membership/>
         <Testimonial/>
+        <Community/>
       </main>
     </>
   );
