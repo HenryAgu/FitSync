@@ -26,10 +26,10 @@ const Footer = () => {
           <NavLink to="">
             <img src={Twitter} alt="Twitter" />
           </NavLink>
-          <img src={Instagram} alt="Instagram" />
-          <img src={Youtube} alt="Youtube" />
-          <img src={LinkedIn} alt="LinkedIn" />
-          <img src={Facebook} alt="Facebook" />
+          <NavLink to=""><img src={Instagram} alt="Instagram" /></NavLink>
+          <NavLink to=""><img src={Youtube} alt="Youtube" /></NavLink>
+          <NavLink to=""><img src={LinkedIn} alt="LinkedIn" /></NavLink>
+          <NavLink to=""><img src={Facebook} alt="Facebook" /></NavLink>
         </div>
       </div>
       <div className="footer_middle">
