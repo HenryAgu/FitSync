@@ -5,10 +5,10 @@
     width: 90%;
     margin: 0 auto;
     padding: 80px 0;
-    padding-bottom: 150px;
+    padding-bottom: 15 0px;
 
     .team_header {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
       h1 {
         font-family: "Sora";
         font-style: normal;
@@ -28,33 +28,61 @@
       }
     }
 
-    .team_info{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        column-gap: 15px;
-        margin-top: 100px;
+    .team_info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 15px;
+      margin-top: 100px;
 
-        .team_card{
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 35px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 400px;
+      .team_card {
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 35px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+
+        .member_name {
+          display: flex;
+          padding: 30px;
+          padding-top: 300px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: end;
+          text-align: center;
+
+          h3 {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 44px;
+            color: #ffffff;
+          }
+
+          p {
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            color: #ffffff;
+          }
         }
+      }
 
-        .first_card{
-            background-image: url(../images/Team1.svg);
+      .first_card {
+        background-image: url(../images/Team1.svg);
+      }
 
-        }
+      .second_card {
+        background-image: url(../images/Team2.svg);
+      }
 
-        .second_card{
-            background-image: url(../images/Team2.svg);
-        }
-
-        .third_card{
-            background-image: url(../images/Team3.svg);
-        }
+      .third_card {
+        background-image: url(../images/Team3.svg);
+      }
     }
   }
 }
