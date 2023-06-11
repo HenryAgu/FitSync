@@ -86,3 +86,62 @@
     }
   }
 }
+
+// Responsiveness starts here
+
+@media (max-width: 1024px) {
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .team {
+    .inner_team {
+      .team_header {
+        margin-top: -20px;
+        h1 {
+          font-size: 28px;
+          line-height: 35px;
+        }
+
+        p {
+          margin-top: 20px;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+
+      .team_info{
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .team {
+    .inner_team {
+      .team_header {
+        margin-top: -20px;
+        h1 {
+          font-size: 28px;
+          line-height: 35px;
+        }
+
+        p {
+          margin-top: 20px;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+
+      .team_info{
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+      }
+    }
+  }
+}

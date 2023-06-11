@@ -28,31 +28,31 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero_elevate">
-      <div className="elevate_left">
-        <div className="marquee_text">
-          <p>EXERCISE</p>
+        <div className="elevate_left">
+          <div className="marquee_text">
+            <p>EXERCISE</p>
+          </div>
+          <div className="inner_elevate">
+            <div className="inner_elevate_header">
+              <h3>ELEVATE YOUR</h3>
+              <h3>WORKOUT</h3>
+            </div>
+            <div className="inner_elevate_content">
+              <p>
+                Soar to new heights with our groundbreaking fitness experience.
+                Elevate your workout and unleash your inner hero. Ignite your
+                potential, push your limits, and ascend to greatness.
+              </p>
+            </div>
+            <div className="join_us">
+              <NavLink to="" style={{ textDecoration: "none" }}>
+                <img src={join} alt="join_icon" />
+              </NavLink>
+              <p>Join Now</p>
+            </div>
+          </div>
         </div>
-        <div className="inner_elevate">
-          <div className="inner_elevate_header">
-            <h3>ELEVATE YOUR</h3>
-            <h3>WORKOUT</h3>
-          </div>
-          <div className="inner_elevate_content">
-            <p>
-              Soar to new heights with our groundbreaking fitness experience.
-              Elevate your workout and unleash your inner hero. Ignite your
-              potential, push your limits, and ascend to greatness.
-            </p>
-          </div>
-          <div className="join_us">
-            <NavLink to="" style={{ textDecoration: "none" }}>
-              <img src={join} alt="join_icon" />
-            </NavLink>
-            <p>Join Now</p>
-          </div>
-        </div>
-      </div>
-        <div className="elevate_right"></div> 
+        <div className="elevate_right"></div>
       </div>
     </main>
   );

@@ -50,7 +50,7 @@
           transition: all 0.3s ease;
           color: #ffffff;
 
-          &:hover{
+          &:hover {
             background-color: #ffffff;
             color: #040404;
           }
@@ -58,24 +58,81 @@
       }
     }
 
-    .inner_community_right{
-        .right_images{
-            display: flex;
-            align-items: center;
+    .inner_community_right {
+      .right_images {
+        display: flex;
+        align-items: center;
 
-            img{
-                width: 150px;
-                height: 150px;
-            }
-
-            .first_image{
-                margin-right: -40px;
-            }
-
-            .second_image{
-                margin-right: -40px;
-            }
+        img {
+          width: 150px;
+          height: 150px;
         }
+
+        .first_image {
+          margin-right: -40px;
+        }
+
+        .second_image {
+          margin-right: -40px;
+        }
+      }
+    }
+  }
+}
+
+// Responsiveness starts here
+
+@media (max-width: 1024px) {
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .community{
+    .inner_community{
+      flex-direction: column;
+      row-gap: 50px;
+
+      .inner_community_left{
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .community {
+    .inner_community {
+      flex-direction: column;
+      row-gap: 50px;
+      padding: 50px 0;
+      border-bottom: none;
+
+      .inner_community_left {
+        .left_header {
+          h2 {
+            font-size: 28px;
+            line-height: 35px;
+          }
+
+          p {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+
+        .left_button{
+          margin-top: 30px;
+          button{
+            padding: 18px 35px;
+          }
+        }
+        
+      }
+      .inner_community_right{
+        display: none;
+      }
     }
   }
 }

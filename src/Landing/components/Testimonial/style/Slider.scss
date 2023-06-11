@@ -7,6 +7,7 @@
   .quote_card {
     display: flex;
     align-items: center;
+    column-gap: 10px;
     transition: transform 0.3s;
     margin-top: 30px;
     width: 550%;
@@ -139,7 +140,7 @@
         color: #000000;
       }
 
-      h4{
+      h4 {
         font-family: "Work Sans";
         font-style: normal;
         font-weight: 600;
@@ -149,32 +150,183 @@
       }
     }
 
-    .right_nav{
-        display: flex;
-        align-items: center;
-        column-gap: 20px;
+    .right_nav {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
 
-        .left_arrow{
-            font-size: 25px;
-            font-weight: 900;
-            cursor: pointer;
-            transition: all 0.2s ease;
+      .left_arrow {
+        font-size: 25px;
+        font-weight: 900;
+        cursor: pointer;
+        transition: all 0.2s ease;
 
-            &:hover{
-                color: #888888;
+        &:hover {
+          color: #888888;
+        }
+      }
+
+      .right_arrow {
+        font-size: 25px;
+        font-weight: 900;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: #888888;
+        }
+      }
+    }
+  }
+}
+
+// Responsiveness starts here
+
+@media (max-width: 1024px) {
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .quotes {
+    padding-left: 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    .quote_icon {
+      margin-left: 10px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .quote_card {
+      margin-top: 10px;
+      margin-bottom: -10px;
+
+      .inner_quotes {
+        width: 100vw;
+
+        .left_quote {
+          padding: 20px;
+          width: 80%;
+          height: auto;
+
+          .head_quote {
+            p {
+              font-size: 16px;
+              line-height: 30px;
             }
+          }
+
+          .quote_writer {
+            margin-top: 20px;
+            align-items: center;
+            .left_quote_writer {
+              img {
+                width: 50px;
+                height: 50px;
+              }
+            }
+
+            .right_quote_writer {
+
+              h4 {
+                font-size: 20px;
+                line-height: 31px;
+              }
+
+              p{
+                font-size: 16px;
+                line-height: 25px;
+              }
+            }
+          }
         }
 
-        .right_arrow{
-            font-size: 25px;
-            font-weight: 900;
-            cursor: pointer;
-            transition: all 0.2s ease;
-
-            &:hover{
-                color: #888888;
-            }
+        .right_quote {
+          display: none;
         }
+      }
+
+      .slide_nav {
+        width: 90%;
+        margin-top: -20px;
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .quotes {
+    padding-left: 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    .quote_icon {
+      margin-left: 10px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .quote_card {
+      margin-top: 10px;
+      margin-bottom: -10px;
+
+      .inner_quotes {
+        width: 100vw;
+
+        .left_quote {
+          padding: 20px;
+          width: 80%;
+          height: auto;
+
+          .head_quote {
+            p {
+              font-size: 16px;
+              line-height: 30px;
+            }
+          }
+
+          .quote_writer {
+            margin-top: 20px;
+            align-items: center;
+            .left_quote_writer {
+              img {
+                width: 50px;
+                height: 50px;
+              }
+            }
+
+            .right_quote_writer {
+
+              h4 {
+                font-size: 20px;
+                line-height: 31px;
+              }
+
+              p{
+                font-size: 16px;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+
+        .right_quote {
+          display: none;
+        }
+      }
+
+      .slide_nav {
+        width: 90%;
+        margin-top: -20px;
+      }
     }
   }
 }

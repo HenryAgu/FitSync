@@ -19,7 +19,7 @@
         position: relative;
         margin-top: -70px;
 
-        .slide_content{
+        .slide_content {
           display: flex;
           align-items: center;
           h1 {
@@ -35,10 +35,10 @@
         }
 
         @keyframes marquee {
-          from{
+          from {
             transform: translateX(0);
           }
-          to{
+          to {
             transform: translateX(-100%);
           }
         }
@@ -64,6 +64,50 @@
         font-size: 18px;
         line-height: 23px;
         color: #ffffff;
+      }
+    }
+  }
+}
+
+// Responsiveness starts here
+
+@media (max-width: 1024px) {
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .membership {
+    margin-top: 50px;
+
+    .membership_content {
+      .membership_slide {
+        .membership_marquee_slide {
+          margin-top: -50px;
+          .slide_content {
+            h1 {
+              font-size: 150px;
+            }
+          }
+        }
+      }
+
+      .membership_header {
+        bottom: 160px;
+
+        h3 {
+          font-size: 27px;
+          line-height: 35px;
+        }
+
+        h4 {
+          margin-top: 15px;
+          font-size: 16px;
+          line-height: 19px;
+        }
       }
     }
   }

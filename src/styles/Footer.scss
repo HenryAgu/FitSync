@@ -98,3 +98,89 @@ footer {
     }
   }
 }
+
+// Responsiveness starts here
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+// Medium Screens
+@media (max-width: 991px) {
+  footer{
+    margin: 80px auto;
+    margin-bottom: 100px;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 50px;
+
+    .footer_left{
+      h4{
+        font-size: 15px;
+      }
+      .left_social_icons{
+        img{
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .footer_middle{
+
+      p{
+        font-size: 18px;
+      }
+    }
+
+    .footer_right{
+      h3{
+        font-size: 28px;
+      }
+      p{
+        margin-top: 10px;
+        text-align: unset;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  footer{
+    margin: 30px auto;
+    margin-bottom: 100px;
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+
+    .footer_left{
+      h4{
+        font-size: 15px;
+      }
+      .left_social_icons{
+        img{
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .footer_middle{
+      flex-direction: column;
+
+      p{
+        font-size: 18px;
+      }
+    }
+
+    .footer_right{
+      h3{
+        font-size: 28px;
+      }
+      p{
+        margin-top: 10px;
+        text-align: unset;
+        font-size: 15px;
+      }
+    }
+  }
+}

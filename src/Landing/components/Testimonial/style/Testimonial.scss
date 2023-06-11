@@ -24,3 +24,32 @@
     }
   }
 }
+
+// Responsiveness starts here
+
+@media (max-width: 1024px) {
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .testimonial {
+    margin: 100px auto;
+
+    .testimonial_header {
+      h1 {
+        font-size: 28px;
+        line-height: 35px;
+      }
+
+      h4 {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}

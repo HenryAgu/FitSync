@@ -152,3 +152,93 @@
     }
   }
 }
+
+// Responsiveness starts here
+
+@media (max-width: 1024px) {
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .plan{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+
+    .standard_card{
+
+      .standard_header{
+
+        .recommended{
+          img{
+            height: 15px;
+            width: 15px;
+          }
+
+          p{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .plan {
+    row-gap: 30px;
+    column-gap: 0;
+    grid-template-columns: 1fr;
+
+    .plan_card {
+      .plan_header {
+        h1 {
+          font-size: 50px;
+
+          span {
+            font-size: 18px;
+          }
+        }
+
+        h4 {
+          font-size: 20px;
+          line-height: 23px;
+        }
+      }
+
+      .content {
+        .plan_content {
+          .plan_content_point {
+            img {
+              height: 15px;
+              width: 15px;
+            }
+
+            p {
+              font-size: 16px;
+              line-height: 19px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .standard_card{
+
+      .standard_header{
+
+        .recommended{
+          img{
+            height: 15px;
+            width: 15px;
+          }
+
+          p{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

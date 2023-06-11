@@ -126,7 +126,7 @@
           background-size: cover;
           transition: all 0.2s ease;
 
-          &:hover{
+          &:hover {
             filter: grayscale(100%);
           }
         }
@@ -209,7 +209,7 @@
         margin-right: -20px;
         justify-content: end;
 
-        img{
+        img {
           width: 70%;
         }
       }
@@ -249,9 +249,231 @@
             outline: none;
             border: none;
 
-            &:focus{
+            &:focus {
               background: #ffffff;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsiveness starts here
+@media (max-width: 1280px) {
+  .programs {
+    .program_content {
+      .program_content_left {
+        .challenge_program {
+          display: flex;
+          // align-items: center;
+          margin-top: 10px;
+          column-gap: 10px;
+
+          .challenge_left {
+            height: 40vh;
+          }
+
+          .challenge_right {
+            height: 40vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .programs {
+    margin-top: 50px;
+
+    .program_content {
+      height: 100%;
+
+      .program_content_left {
+        width: 100%;
+
+        .energize_section {
+          height: auto;
+
+          h1 {
+            font-size: 30px;
+            line-height: 50px;
+          }
+
+          .energize_img {
+            position: relative;
+            left: 150px;
+          }
+
+          .energize_button {
+            margin-top: -60px;
+            text-align: center;
+            width: 85%;
+            padding: 25px;
+          }
+        }
+
+        .challenge_program {
+          .challenge_left {
+            display: none;
+          }
+
+          .challenge_right {
+            height: auto;
+            width: 100%;
+            padding: 15px;
+            padding-bottom: 20px;
+            margin: 5px auto;
+
+            h1 {
+              font-size: 70px;
+              line-height: 132.8%;
+            }
+
+            h3 {
+              font-size: 24px;
+              line-height: 132.8%;
+            }
+
+            .challenge_button {
+              padding: 20px;
+              width: 86%;
+            }
+          }
+        }
+      }
+
+      .program_content_right {
+        height: 650px;
+        width: 88%;
+        padding: 20px;
+
+        .content_right_top {
+          display: flex;
+          justify-content: center;
+          margin-top: 140px;
+          margin-left: 20px;
+        }
+
+        .content-right_bottom {
+          h1 {
+            font-size: 45px;
+            line-height: 57px;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 132.8%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .programs {
+    margin-top: 50px;
+
+    .program_header {
+      h3 {
+        font-size: 28px;
+        line-height: 35px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    .program_content {
+      flex-direction: column;
+      height: 100%;
+
+      .program_content_left {
+        width: 100%;
+
+        .energize_section {
+          height: auto;
+
+          h1 {
+            font-size: 30px;
+            line-height: 50px;
+          }
+
+          .energize_img {
+            position: relative;
+            left: 150px;
+          }
+
+          .energize_button {
+            margin-top: -60px;
+            text-align: center;
+            width: 85%;
+            padding: 25px;
+          }
+        }
+
+        .challenge_program {
+          .challenge_left {
+            display: none;
+          }
+
+          .challenge_right {
+            height: auto;
+            width: 100%;
+            padding: 15px;
+            padding-bottom: 20px;
+            margin: 15px auto;
+
+            h1 {
+              font-size: 70px;
+              line-height: 132.8%;
+            }
+
+            h3 {
+              font-size: 24px;
+              line-height: 132.8%;
+            }
+
+            .challenge_button {
+              padding: 20px;
+              width: 86%;
+            }
+          }
+        }
+      }
+
+      .program_content_right {
+        height: 467px;
+        width: 88%;
+        padding: 20px;
+
+        .content_right_top {
+          display: flex;
+          justify-content: center;
+          margin-top: 140px;
+          margin-left: 20px;
+        }
+
+        .content-right_bottom {
+          h1 {
+            font-size: 45px;
+            line-height: 57px;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 132.8%;
+            margin-bottom: 20px;
           }
         }
       }

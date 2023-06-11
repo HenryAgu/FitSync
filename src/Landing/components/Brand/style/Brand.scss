@@ -2,18 +2,18 @@
   margin: 0 auto;
   width: 90%;
 
-  .logos{
+  .logos {
     padding: 50px 0;
     overflow: hidden;
     white-space: nowrap;
 
-    .logos_slide{
+    .logos_slide {
       display: inline-block;
       // width: 130%;
       margin-left: 40px;
       animation: slide 15s infinite linear;
 
-      img{
+      img {
         height: 100px;
         margin: 0 50px;
       }
@@ -21,11 +21,38 @@
   }
 
   @keyframes slide {
-    from{
+    from {
       transform: translateX(0);
     }
-    to{
+    to {
       transform: translateX(-100%);
+    }
+  }
+}
+
+// Responsiveness starts here
+
+@media (max-width: 1024px) {
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .brands {
+    width: 100%;
+    .logos {
+      padding: 0;
+
+      .logos_slide {
+        margin-left: 20px;
+        
+        img {
+          height: 50px;
+        }
+      }
     }
   }
 }
