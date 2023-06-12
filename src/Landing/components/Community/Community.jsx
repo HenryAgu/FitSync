@@ -7,9 +7,9 @@ import "./style/Community.scss";
 import { NavLink } from "react-router-dom";
 
 // Images
-import Image1 from "./images/community1.svg";
-import Image2 from "./images/community2.svg";
-import Image3 from "./images/community3.svg";
+import Image1 from "./images/community1.png";
+import Image2 from "./images/community2.png";
+import Image3 from "./images/community3.png";
 
 const Community = () => {
   return (

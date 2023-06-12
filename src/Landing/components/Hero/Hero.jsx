@@ -4,13 +4,13 @@
 import "../Hero/style/Hero.scss";
 
 // Images
-import swift from "../Hero/images/swift.svg";
+import swift from "../Hero/images/swift.png";
 
 // Nav link
 import { NavLink } from "react-router-dom";
 
 // images
-import join from "../Hero/images/join.svg";
+import join from "../Hero/images/join.png";
 
 const Hero = () => {
   return (

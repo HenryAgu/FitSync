@@ -7,13 +7,13 @@ import "../OurProgram/style/OurPrograms.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 // Images
-import Energize from "../OurProgram/images/energize.svg";
+import Energize from "../OurProgram/images/energize.png";
 import Play from "../OurProgram/images/Play.svg";
 
-import yoga from "../OurProgram/images/yoga.svg";
-import weightLift from "../OurProgram/images/weightlift.svg";
-import cardio from "../OurProgram/images/cardio.svg";
-import flexibility from "../OurProgram/images/flexibility.svg";
+import yoga from "../OurProgram/images/yoga.png";
+import weightLift from "../OurProgram/images/weightlift.png";
+import cardio from "../OurProgram/images/cardio.png";
+import flexibility from "../OurProgram/images/flexibility.png";
 
 // Nav link
 import { NavLink } from "react-router-dom";

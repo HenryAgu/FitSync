@@ -7,7 +7,7 @@ import "../../styles/Footer.scss";
 import { NavLink } from "react-router-dom";
 
 // Images
-import FooterLogo from "../Footer/images/FooterLogo.svg";
+import FooterLogo from "../Footer/images/FooterLogo.png";
 import Twitter from "../Footer/images/Twitter.svg";
 import Instagram from "../Footer/images/Instagram.svg";
 // import Youtube from "../Footer/images/YouTube.svg";

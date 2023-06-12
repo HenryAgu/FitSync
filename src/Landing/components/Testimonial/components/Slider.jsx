@@ -9,11 +9,11 @@ import { TfiAngleRight } from "react-icons/tfi";
 
 // images
 import Quote from "../images/Quote.svg";
-import Image1 from "../images/image1.svg";
-import Image2 from "../images/image2.svg";
-import Image3 from "../images/image3.svg";
-import Image4 from "../images/image4.svg";
-import Image5 from "../images/image5.svg";
+import Image1 from "../images/image1.png";
+import Image2 from "../images/image2.png";
+import Image3 from "../images/image3.png";
+import Image4 from "../images/image4.png";
+import Image5 from "../images/image5.png";
 
 const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
