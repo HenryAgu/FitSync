@@ -41,18 +41,18 @@ const Navbar = () => {
             <img src={point} alt="point" />
             <NavLink to="/programs">PROGRAMS</NavLink>
             <img src={point} alt="point" />
-            <NavLink to="about_us">ABOUT US</NavLink>
+            <NavLink to="/about_us">ABOUT US</NavLink>
             <img src={point} alt="point" />
             <NavLink to="/pricing">PRICING</NavLink>
             <img src={point} alt="point" className="last_point"/>
-            <NavLink to="/">
+            <NavLink to="/join_now">
                <button className="mobile_join_us">Join Now</button>
             </NavLink>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
               <GrClose style={{color: "#ff5c00", fontSize: "32px"}} />
             </button>
           </nav>
-          <NavLink to="">
+          <NavLink to="/join_now">
             <div className="join_now">
               <button>Join Now</button>
             </div>

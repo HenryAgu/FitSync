@@ -1,0 +1,48 @@
+.not_found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px auto;
+
+  .inner_not_found {
+    h1 {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 76px;
+      color: #000000;
+    }
+
+    .not_found_mobile {
+      display: none;
+    }
+
+    h3 {
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: #888888;
+    }
+
+    button {
+      margin-top: 50px;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 23px;
+      color: #ffffff;
+      background: #ff5c00;
+      border-radius: 48px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding: 15px 30px;
+    }
+  }
+}
