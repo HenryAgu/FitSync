@@ -2,7 +2,7 @@
 import "../../styles/Navbar.scss";
 
 // react icons
-import { GrClose } from "react-icons/gr";
+import { AiOutlineClose } from "react-icons/ai";
 
 // Import Use Ref
 import { useRef } from "react";
@@ -48,8 +48,8 @@ const Navbar = () => {
             <NavLink to="/join_now">
                <button className="mobile_join_us">Join Now</button>
             </NavLink>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-              <GrClose style={{color: "#ff5c00", fontSize: "32px"}} />
+            <button className="nav-btn nav-close-btn" onClick={showNavbar} style={{color: "white", fontSize: "32px"}}>
+              <AiOutlineClose/>
             </button>
           </nav>
           <NavLink to="/join_now">

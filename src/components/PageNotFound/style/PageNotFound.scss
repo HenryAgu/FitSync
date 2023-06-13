@@ -46,3 +46,41 @@
     }
   }
 }
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .not_found {
+    .inner_not_found {
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      h3 {
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      button {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+.not_found{
+    .inner_not_found{
+        .not_found_desktop{
+            display: none;
+        }
+    
+        .not_found_mobile{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+}
