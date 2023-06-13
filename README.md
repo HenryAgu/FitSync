@@ -5,7 +5,7 @@
 Welcome to the FitSync GitHub repository, the open-source hub for fitness enthusiasts. FitSync is dedicated to harnessing the power of collaboration to enhance the fitness experience and promote a healthier lifestyle. Fit Sync is a web application that helps you track your fitness goals, manage your workouts, and stay motivated on your fitness journey. Whether you're a beginner or a fitness enthusiast, Fit Sync provides the tools and features you need to stay organized and focused.
 
 ## Features
-- **Easy User Interface**
+- **Easy User Interface** Users can easily navigate through the web pages to search and get information regarding our gym and fitness in general.
 
 - **Community Support:** Connect with a community of like-minded individuals, share your progress, and find motivation from others on their fitness journeys.
 
