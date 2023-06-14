@@ -1,3 +1,5 @@
+// import React from "react";
+
 // stylesheet
 import "../../styles/Navbar.scss";
 
@@ -17,11 +19,17 @@ import point from "../Navbar/images/point.svg";
 import menu from "../Navbar/images/menu.svg";
 
 const Navbar = () => {
+  // Navbar open and close function
   const navRef = useRef();
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+    navRef.current.classList.add("responsive_nav");
   };
+
+  const closeNavbar = () => {
+    navRef.current.classList.remove("responsive_nav");
+  };
+
   return (
     <div className="Navbar">
       <div className="container">
@@ -35,21 +43,25 @@ const Navbar = () => {
             </div>
           </NavLink>
           <nav ref={navRef}>
-            <NavLink to="/">HOME</NavLink>
+            <NavLink to="/" onClick={closeNavbar}>HOME</NavLink>
             <img src={point} alt="point" />
-            <NavLink to="/services">SERVICES</NavLink>
+            <NavLink to="/services" onClick={closeNavbar}>SERVICES</NavLink>
             <img src={point} alt="point" />
-            <NavLink to="/programs">PROGRAMS</NavLink>
+            <NavLink to="/programs" onClick={closeNavbar}>PROGRAMS</NavLink>
             <img src={point} alt="point" />
-            <NavLink to="/about_us">ABOUT US</NavLink>
+            <NavLink to="/about_us" onClick={closeNavbar}>ABOUT US</NavLink>
             <img src={point} alt="point" />
-            <NavLink to="/pricing">PRICING</NavLink>
-            <img src={point} alt="point" className="last_point"/>
-            <NavLink to="/join_now">
-               <button className="mobile_join_us">Join Now</button>
+            <NavLink to="/pricing" onClick={closeNavbar}>PRICING</NavLink>
+            <img src={point} alt="point" className="last_point" />
+            <NavLink to="/join_now" onClick={closeNavbar}>
+              <button className="mobile_join_us">Join Now</button>
             </NavLink>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar} style={{color: "white", fontSize: "32px"}}>
-              <AiOutlineClose/>
+            <button
+              className="nav-btn nav-close-btn"
+              onClick={closeNavbar}
+              style={{ color: "white", fontSize: "32px" }}
+            >
+              <AiOutlineClose />
             </button>
           </nav>
           <NavLink to="/join_now">

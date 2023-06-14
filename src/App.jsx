@@ -17,15 +17,15 @@ function App() {
   return (
     <>
       <main>
-          <BrowserRouter>
-          <ScrollToTop/>
-            <Navbar />
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/*" element={<PageNotFound/>}/>
-            </Routes>
-            <Footer/>
-          </BrowserRouter>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/*" element={<PageNotFound />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
       </main>
     </>
   );
