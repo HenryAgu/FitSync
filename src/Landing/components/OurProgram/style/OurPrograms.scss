@@ -198,7 +198,6 @@
       padding: 30px;
       width: 55%;
       border-radius: 30px;
-      height: 90%;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -284,6 +283,61 @@
 }
 
 @media (max-width: 1024px) {
+  .programs{
+
+    .program_content{
+
+      .program_content_left{
+
+        .energize_section{
+          height: 60vh;
+
+          h1 {
+            font-size: 30px;
+            line-height: 50px;
+          }
+
+          .energize_img {
+            position: relative;
+            left: 150px;
+          }
+
+          .energize_button {
+            margin-top: -60px;
+            text-align: center;
+            width: 85%;
+            padding: 25px;
+          }
+        }
+
+        .challenge_program{
+
+          .challenge_left{
+            display: none;
+          }
+
+          .challenge_right{
+            height: 51vh;
+
+            h1 {
+              font-size: 70px;
+              line-height: 132.8%;
+            }
+
+            h3 {
+              font-size: 24px;
+              line-height: 132.8%;
+            }
+
+            .challenge_button {
+              padding: 20px;
+              width: 86%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Medium Screens */
