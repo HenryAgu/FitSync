@@ -45,7 +45,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="join_us">
-              <NavLink to="" style={{ textDecoration: "none" }}>
+              <NavLink to="/join_now" style={{ textDecoration: "none" }}>
                 <img src={join} alt="join_icon" />
               </NavLink>
               <p>Join Now</p>

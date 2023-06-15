@@ -71,7 +71,7 @@ const OurPrograms = () => {
             <div className="energize_img">
               <img src={Energize} alt="Energize" />
             </div>
-            <NavLink to="" style={{ textDecoration: "none" }}>
+            <NavLink to="/join_now" style={{ textDecoration: "none" }}>
               <div className="energize_button">
                 <p>Join Now</p>
                 <AiOutlineArrowRight className="button_arrow" />
@@ -84,7 +84,7 @@ const OurPrograms = () => {
               <h1>200+</h1>
               <h3>Challenges &</h3>
               <h3>Programs</h3>
-              <NavLink to="" style={{ textDecoration: "none" }}>
+              <NavLink to="/learn_more" style={{ textDecoration: "none" }}>
                 <div className="challenge_button">
                   <p>Learn More</p>
                   <AiOutlineArrowRight className="button_arrow" />

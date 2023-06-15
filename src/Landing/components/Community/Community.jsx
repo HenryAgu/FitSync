@@ -24,7 +24,7 @@ const Community = () => {
             </p>
           </div>
           <div className="left_button">
-            <NavLink to="/">
+            <NavLink to="/community">
               <button>Join Now</button>
             </NavLink>
           </div>

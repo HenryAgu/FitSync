@@ -71,16 +71,16 @@
 
 /* Small Screens */
 @media only screen and (max-width: 480px) {
-.not_found{
-    .inner_not_found{
-        .not_found_desktop{
-            display: none;
-        }
-    
-        .not_found_mobile{
-            display: block;
-            margin: 0 auto;
-        }
+  .not_found {
+    .inner_not_found {
+      .not_found_desktop {
+        display: none;
+      }
+
+      .not_found_mobile {
+        display: block;
+        margin: 0 auto;
+      }
     }
-}
+  }
 }

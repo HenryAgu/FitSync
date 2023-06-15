@@ -48,7 +48,7 @@ const Plans = () => {
           </div>
         </div>
         <div className="plan_button">
-          <NavLink to="">
+          <NavLink to="/programs">
             <button>Choose Basic Plan</button>
           </NavLink>
         </div>
@@ -91,7 +91,7 @@ const Plans = () => {
           </div>
         </div>
         <div className="plan_button standard_button">
-          <NavLink to="">
+          <NavLink to="/programs">
             <button>Choose Standard Plan</button>
           </NavLink>
         </div>
@@ -130,7 +130,7 @@ const Plans = () => {
           </div>
         </div>
         <div className="plan_button">
-          <NavLink to="">
+          <NavLink to="/programs">
             <button>Choose Premium Plan</button>
           </NavLink>
         </div>

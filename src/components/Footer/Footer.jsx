@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 import FooterLogo from "../Footer/images/FooterLogo.png";
 import Twitter from "../Footer/images/Twitter.svg";
 import Instagram from "../Footer/images/Instagram.svg";
-// import Youtube from "../Footer/images/YouTube.svg";
+import Youtube from "../Footer/images/YouTube.svg";
 import LinkedIn from "../Footer/images/LinkedIn.svg";
 import Facebook from "../Footer/images/Facebook.svg";
 
@@ -27,7 +27,7 @@ const Footer = () => {
             <img src={Twitter} alt="Twitter" />
           </NavLink>
           <NavLink to=""><img src={Instagram} alt="Instagram" /></NavLink>
-          {/* <NavLink to=""><img src={Youtube} alt="Youtube" /></NavLink> */}
+          <NavLink to=""><img src={Youtube} alt="Youtube" /></NavLink>
           <NavLink to=""><img src={LinkedIn} alt="LinkedIn" /></NavLink>
           <NavLink to=""><img src={Facebook} alt="Facebook" /></NavLink>
         </div>
@@ -65,7 +65,7 @@ const Footer = () => {
       <div className="footer_right">
         <h3>JOIN US TODAY</h3>
         <p>Join us today and embark on a transformative fitness journey.</p>
-        <NavLink to="">
+        <NavLink to="/join_now">
           <button>Join Now</button>
         </NavLink>
       </div>
