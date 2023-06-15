@@ -246,7 +246,7 @@
             cursor: pointer;
             transition: all 0.2s ease;
             outline: none;
-            border: none;
+            border: 1.5px solid whitesmoke;
 
             &:focus {
               background: #ffffff;
@@ -520,7 +520,7 @@
 
         .content-right_bottom {
           h1 {
-            font-size: 45px;
+            font-size: 35px;
             line-height: 57px;
           }
 
