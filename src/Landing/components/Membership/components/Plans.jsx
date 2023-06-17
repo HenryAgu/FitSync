@@ -62,7 +62,7 @@ const Plans = () => {
           <h1>
             $50<span>/Month</span>
           </h1>
-          <h4>Standard Plan</h4>
+          <h4 style={{color: "#ffffff"}}>Standard Plan</h4>
         </div>
         <div className="content standard_content">
           <div className="plan_content">
