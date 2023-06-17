@@ -34,30 +34,30 @@ const Footer = () => {
       </div>
       <div className="footer_middle">
         <div className="inner_middle">
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="/programs" style={{ textDecoration: "none" }}>
             <p>Programs</p>
           </NavLink>
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="/testimonials" style={{ textDecoration: "none" }}>
             <p>Testimonials</p>
           </NavLink>
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="/blogs" style={{ textDecoration: "none" }}>
             <p>Blog</p>
           </NavLink>
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="/store" style={{ textDecoration: "none" }}>
             <p>Store</p>
           </NavLink>
         </div>
         <div className="inner_middle">
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="/membership" style={{ textDecoration: "none" }}>
             <p>Membership</p>
           </NavLink>
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="/community" style={{ textDecoration: "none" }}>
             <p>Community</p>
           </NavLink>
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="/contact" style={{ textDecoration: "none" }}>
             <p>Contact Us</p>
           </NavLink>
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="/faqs" style={{ textDecoration: "none" }}>
             <p>FAQs</p>
           </NavLink>
         </div>
