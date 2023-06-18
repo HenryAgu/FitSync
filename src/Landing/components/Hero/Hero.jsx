@@ -1,4 +1,8 @@
-// import React from 'react'
+import {useEffect} from 'react'
+
+// Animation On Scroll
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // stylesheet
 import "../Hero/style/Hero.scss";
@@ -13,9 +17,13 @@ import { NavLink } from "react-router-dom";
 import join from "../Hero/images/join.png";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <main className="Hero">
-      <div className="hero_header">
+      <div className="hero_header" data-aos="fade-right" data-aos-duration="1000">
         <div className="hero_header_left">
           <h1>FITNESS</h1>
         </div>
@@ -27,7 +35,7 @@ const Hero = () => {
           <h3>EXERCISING</h3>
         </div>
       </div>
-      <div className="hero_elevate">
+      <div className="hero_elevate" data-aos="fade-left" data-aos-duration="1000">
         <div className="elevate_left">
           <div className="marquee_text">
             <p>EXERCISE</p>

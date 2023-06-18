@@ -1,4 +1,8 @@
-// import React from 'react'
+import { useEffect } from "react";
+
+// Animation On Scroll
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // stylesheet
 import "../style/Plans.scss";
@@ -12,8 +16,12 @@ import star from "../images/star.svg";
 import { NavLink } from "react-router-dom";
 
 const Plans = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <main className="plan">
+    <main className="plan" data-aos="flip-left">
       <div className="plan_card">
         <div className="plan_header">
           <h1>

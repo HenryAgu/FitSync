@@ -1,4 +1,3 @@
-// import React from 'react'
 
 // stylsheet
 import "../Membership/style/Membership.scss";
@@ -7,16 +6,17 @@ import "../Membership/style/Membership.scss";
 import Plans from "./components/Plans";
 
 const Membership = () => {
+
   return (
     <main className="membership">
       <div className="membership_content">
         <div className="membership_slide">
           <div className="membership_marquee_slide">
             <div className="slide_content">
-            <h1>MEMBERSHIP PLAN</h1>
-            <h1>MEMBERSHIP PLAN</h1>
-            <h1>MEMBERSHIP PLAN</h1>
-            <h1>MEMBERSHIP PLAN</h1>
+              <h1>MEMBERSHIP PLAN</h1>
+              <h1>MEMBERSHIP PLAN</h1>
+              <h1>MEMBERSHIP PLAN</h1>
+              <h1>MEMBERSHIP PLAN</h1>
             </div>
           </div>
         </div>
